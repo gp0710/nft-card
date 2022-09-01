@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-main-BG);
+}
+
+div.gramp-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.papa-container {
+    margin: 20px;
+}
+
+div.container, img {
+    border-radius: 15px;
+}
+
+div.container {
+    background-color: var(--very-dark-blue-card-BG);
+    padding: 20px;
+    width: 349px;
+    transform: scale(0.9);
+}
+
+div.main-info {
+    line-height: 1;
+}
+
+#prism-cube {
+    max-width: 100%;
+    max-height: auto;
+    width: 359px;
+}
+
+#main-text {
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#main-text:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+#description, #time-left, #author {
+    color: var(--soft-blue);
+}
+
+#description {
+    font-weight: 100;
+    font-size: 18px;
+}
+.price-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+#price, #time-left {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+#price {
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+hr { 
+    background-color: var(--very-dark-blue-line);
+    height: 1px;
+    border: none;
+}
+
+.author {
+    display: flex;
+    column-gap: 20px;
+}
+
+div.avatar > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+
+#creation-of {
+    color: var(--white)
+}
+
+span {
+    color: var(--soft-blue);
+    cursor: pointer;
+}
+
+span:hover {
+    color: var(--cyan);
+}
+
+div.image {
+    width: 100%;
+    height: auto;
+}
+
+div.image > img:hover {
+    opacity: 0.5;
+}
+
+div.papa-image > embed {
+    display: none;
+}
+
+
+div.papa-image {
+    border-radius: 15px;
+
+}
+
+div.papa-image > embed:hover{
+    display:block;
+}
+div.papa-image:hover {
+    display: block;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-color: var(--cyan);
+    opacity: 0.9;
+    background-position: center;
+    height: 350px;
+    cursor: pointer;
+}
