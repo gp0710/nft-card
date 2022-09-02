@@ -118,11 +118,11 @@ div.avatar > img {
 }
 
 #creation-of {
-    color: var(--white)
+    color: var(--soft-blue)
 }
 
 span {
-    color: var(--soft-blue);
+    color: var(--white);
     cursor: pointer;
 }
 
