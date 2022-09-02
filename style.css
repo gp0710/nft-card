@@ -3,7 +3,6 @@
 :root {
     --soft-blue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
-
     --very-dark-blue-main-BG: hsl(217, 54%, 11%);
     --very-dark-blue-card-BG: hsl(216, 50%, 16%);
     --very-dark-blue-line: hsl(215, 32%, 27%);
@@ -23,29 +22,42 @@ div.gramp-container {
     align-items: center;
 }
 
-div.papa-container {
-    margin: 20px;
-}
-
 div.container, img {
     border-radius: 15px;
 }
 
 div.container {
     background-color: var(--very-dark-blue-card-BG);
-    padding: 20px;
-    width: 349px;
+    padding: 25px;
+    width: 314px;
     transform: scale(0.9);
+}
+
+/* set width and height to maintain scale when stretched */
+div.papa-image, div.image, div.image > img {
+    width: 314px;
+    height: 314px;
+}
+
+div.image > img:hover {
+    opacity: 0.2;
+}
+
+div.papa-image:hover {
+    border-radius: 15px;
+    background-image: url('images/icon-view.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--cyan);
+    opacity: 1;
+    cursor: pointer;
+    max-width: 100%;
+    border: none;
+    align-items: stretch;
 }
 
 div.main-info {
     line-height: 1;
-}
-
-#prism-cube {
-    max-width: 100%;
-    max-height: auto;
-    width: 359px;
 }
 
 #main-text {
@@ -95,13 +107,14 @@ hr {
 .author {
     display: flex;
     column-gap: 20px;
+    margin-top: 20px;
 }
 
 div.avatar > img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 3px solid var(--white);
+    border: 2px solid var(--white);
 }
 
 #creation-of {
@@ -117,35 +130,3 @@ span:hover {
     color: var(--cyan);
 }
 
-div.image {
-    width: 100%;
-    height: auto;
-}
-
-div.image > img:hover {
-    opacity: 0.5;
-}
-
-div.papa-image > embed {
-    display: none;
-}
-
-
-div.papa-image {
-    border-radius: 15px;
-
-}
-
-div.papa-image > embed:hover{
-    display:block;
-}
-div.papa-image:hover {
-    display: block;
-    z-index: 9999;
-    background-repeat: no-repeat;
-    background-color: var(--cyan);
-    opacity: 0.9;
-    background-position: center;
-    height: 350px;
-    cursor: pointer;
-}
